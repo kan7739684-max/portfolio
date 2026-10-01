@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Александр Костюченко — журналист, режиссёр, креативный продюсер</title>
+<meta name="description" content="Александр Костюченко — журналист, режиссёр, креативный продюсер. Автор курса «ИИМАТОГРАФ / AIMATOGRAF» и методики «Кино в школу!».">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f8f6f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131210" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Александр Костюченко — портфолио">
+<meta property="og:description" content="Журналист · режиссёр · креативный продюсер">
+<meta property="og:image" content="cinematoschool_iimatograf.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600&display=swap&subset=cyrillic" rel="stylesheet">
+<style>
+:root{
+  --bg:#f8f6f1; --surface:#ffffff; --text:#1c1a17; --muted:#6a645a; --line:#e4dfd5;
+  --accent:#9a3b1e; --accent-soft:#f3e6de; --shadow:0 1px 2px rgba(28,26,23,.04),0 12px 32px -18px rgba(28,26,23,.25);
+  --serif:"Cormorant Garamond","Cormorant",Georgia,"Times New Roman",serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --max:1160px; --pad:clamp(20px,5vw,48px); --radius:14px;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#131210; --surface:#1b1a17; --text:#ece7df; --muted:#a29b8f; --line:#2c2925;
+    --accent:#e39468; --accent-soft:#2a1f19; --shadow:0 1px 2px rgba(0,0,0,.3),0 16px 40px -20px rgba(0,0,0,.7);}
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.65 var(--sans);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration-color:color-mix(in srgb,var(--accent) 45%,transparent);text-underline-offset:.2em;text-decoration-thickness:1px;transition:color .2s,text-decoration-color .2s}
+a:hover{color:var(--accent);text-decoration-color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--text);color:var(--bg);padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.01em;margin:0}
+.eyebrow{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+.muted{color:var(--muted)}
+
+/* header */
+.site-head{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.site-head.scrolled{border-bottom-color:var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px}
+.logo{font:600 22px/1 var(--serif);text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+.logo span{color:var(--accent)}
+.nav ul{display:flex;gap:clamp(14px,2.4vw,32px);list-style:none;margin:0;padding:0}
+.nav a{font-size:14px;font-weight:500;text-decoration:none;color:var(--muted)}
+.nav a:hover,.nav a[aria-current="true"]{color:var(--text)}
+
+/* hero */
+.hero{padding:clamp(64px,11vw,140px) 0 clamp(56px,8vw,104px)}
+.hero h1{font-size:clamp(3.1rem,10.5vw,8.4rem);font-weight:500;line-height:.95;letter-spacing:-.025em}
+.hero h1 .ln{display:block}
+.hero h1 .ln + .ln{padding-left:clamp(0px,7vw,110px)}
+.role{font:500 clamp(1.05rem,2vw,1.35rem)/1.4 var(--sans);margin:clamp(24px,3.5vw,40px) 0 0;letter-spacing:.01em}
+.role .dot{color:var(--accent);padding:0 .35em}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(32px,6vw,96px);align-items:end;margin-top:clamp(36px,5vw,64px);padding-top:clamp(28px,4vw,40px);border-top:1px solid var(--line)}
+.lead{font:500 clamp(1.4rem,2.6vw,1.9rem)/1.3 var(--serif);margin:0;max-width:30ch}
+.lead em{font-style:italic;color:var(--accent)}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.facts li{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:baseline}
+.facts b{font:600 clamp(1.8rem,3vw,2.3rem)/1 var(--serif);color:var(--accent);min-width:3.2ch}
+.facts span{font-size:15px;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(32px,4vw,48px)}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:13px 22px;border-radius:999px;font:600 15px/1 var(--sans);text-decoration:none;border:1px solid var(--text);transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn-primary{background:var(--text);color:var(--bg)}
+.btn-primary:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn .arr{transition:transform .2s}
+.btn:hover .arr{transform:translateX(3px)}
+
+/* sections */
+section{scroll-margin-top:80px}
+.section{padding:clamp(64px,9vw,120px) 0;border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(24px,5vw,72px);margin-bottom:clamp(36px,5vw,64px);align-items:end}
+.sec-head h2{font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:500}
+.sec-head .num{display:block;font:500 15px/1 var(--sans);color:var(--accent);letter-spacing:.12em;margin-bottom:14px}
+.sec-head p{margin:0;color:var(--muted);max-width:56ch}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(24px,5vw,72px)}
+.about .intro{font:500 clamp(1.5rem,2.8vw,2.1rem)/1.25 var(--serif);margin:0 0 28px}
+.about .intro strong{font-weight:600}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.list li{padding:18px 0 18px 34px;border-bottom:1px solid var(--line);position:relative}
+.list li::before{content:"";position:absolute;left:4px;top:30px;width:14px;height:1px;background:var(--accent)}
+.side-title{font:600 12px/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.about-block + .about-block{margin-top:48px}
+
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,36px)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .3s}
+.card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--accent) 35%,var(--line))}
+.card .media{aspect-ratio:16/10;overflow:hidden;background:var(--accent-soft);border-bottom:1px solid var(--line)}
+.card .media img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.card:hover .media img{transform:scale(1.03)}
+.card .body{padding:clamp(22px,2.6vw,32px);display:flex;flex-direction:column;gap:12px;flex:1}
+.tag{font:600 11.5px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.card h3{font-size:clamp(1.7rem,2.6vw,2.2rem);font-weight:600}
+.card .sub{font:italic 500 1.2rem/1.35 var(--serif);color:var(--muted);margin:-4px 0 0}
+.card p{margin:0}
+.card .desc{color:var(--muted);font-size:16px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 0;padding:0;list-style:none}
+.meta li{font-size:13px;padding:5px 11px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:auto;padding-top:14px}
+.links a{font-weight:600;font-size:15px;text-decoration:none;display:inline-flex;gap:.4em;align-items:center}
+.links a .arr{transition:transform .2s;color:var(--accent)}
+.links a:hover .arr{transform:translate(2px,-2px)}
+.links .secondary{font-weight:500;color:var(--muted)}
+.nolink{font-size:14px;color:var(--muted);margin-top:auto;padding-top:14px}
+.card.featured{grid-column:1/-1;display:grid;grid-template-columns:1.25fr 1fr}
+.card.featured .media{aspect-ratio:auto;min-height:100%;border-bottom:0;border-right:1px solid var(--line)}
+.card.featured .media img{object-position:left top}
+.card.featured h3{font-size:clamp(2.2rem,4vw,3.2rem)}
+.type-media{display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(22px,3vw,34px)}
+.type-media .big{font:500 clamp(4rem,9vw,6.4rem)/.9 var(--serif);color:var(--accent);letter-spacing:-.03em}
+.type-media .cap{font-size:14px;color:var(--muted);margin-top:8px}
+
+.subhead{font:500 clamp(1.6rem,3vw,2.2rem)/1.1 var(--serif);margin:clamp(56px,7vw,88px) 0 24px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.subhead small{font:400 15px/1.4 var(--sans);color:var(--muted)}
+.materials{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,28px);list-style:none;margin:0;padding:0}
+.materials figure{margin:0}
+.materials img{border-radius:10px;border:1px solid var(--line);aspect-ratio:16/9;object-fit:cover;width:100%}
+.materials figcaption{font-size:14.5px;color:var(--muted);margin-top:12px;line-height:1.5}
+.materials figcaption b{display:block;color:var(--text);font-weight:600}
+
+/* works / videos */
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:clamp(20px,3vw,36px);list-style:none;margin:0;padding:0}
+.video .frame{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--line)}
+.video .frame a,.video .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video .frame img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .3s;opacity:.92}
+.video .frame a:hover img{transform:scale(1.04);opacity:1}
+.play{position:absolute;left:50%;top:50%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3);transition:transform .25s,background .25s}
+.play::after{content:"";margin-left:4px;border-style:solid;border-width:10px 0 10px 16px;border-color:transparent transparent transparent #1c1a17}
+.video .frame a:hover .play{transform:scale(1.08);background:#fff}
+.video figcaption{display:flex;justify-content:space-between;gap:16px;align-items:baseline;margin-top:14px}
+.video h3{font-size:1.45rem;font-weight:600}
+.video .dur{font-size:13.5px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.videos-note{margin-top:28px;font-size:14.5px;color:var(--muted)}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(28px,4vw,56px)}
+.skills h3{font-size:1.75rem;font-weight:600;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--text)}
+.skills ul{list-style:none;margin:0;padding:0}
+.skills li{padding:11px 0;border-bottom:1px solid var(--line);font-size:16px}
+
+/* contacts */
+.contact-big{font:500 clamp(2rem,6vw,4.6rem)/1.05 var(--serif);margin:0 0 clamp(36px,5vw,56px);letter-spacing:-.015em;word-break:break-word}
+.contact-big a{text-decoration:none;background:linear-gradient(var(--accent),var(--accent)) 0 100%/0 1px no-repeat;transition:background-size .4s,color .2s}
+.contact-big a:hover{background-size:100% 1px}
+.contacts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;list-style:none;margin:0;padding:28px 0 0;border-top:1px solid var(--line)}
+.contacts dt,.contacts .k{font:600 12px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.contacts .v{font-size:16px;font-weight:500;word-break:break-word}
+.site-foot{padding:32px 0 48px;font-size:14px;color:var(--muted)}
+.site-foot .inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .reveal.d2{transition-delay:.08s}.js .reveal.d3{transition-delay:.16s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  *{transition:none!important;animation:none!important}
+}
+
+/* responsive */
+@media (max-width:980px){
+  .card.featured{grid-template-columns:1fr}
+  .card.featured .media{aspect-ratio:16/10;border-right:0;border-bottom:1px solid var(--line)}
+  .materials{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .skills{grid-template-columns:1fr 1fr}
+  .contacts{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .nav{display:none}
+  .hero-grid,.sec-head,.about{grid-template-columns:1fr}
+  .hero h1 .ln + .ln{padding-left:0}
+  .projects{grid-template-columns:1fr}
+  .skills{grid-template-columns:1fr}
+  .materials{grid-template-columns:1fr}
+}
+.mnav{display:none;gap:18px;overflow-x:auto;padding:0 var(--pad) 12px;margin-top:-6px;scrollbar-width:none}
+@media (max-width:760px){ .mnav{display:flex} .site-head .wrap{height:58px} .about .label-col{display:none} .hero h1{font-size:clamp(3.1rem,15vw,4.6rem)} }
+.mnav::-webkit-scrollbar{display:none}
+.mnav a{font-size:14px;color:var(--muted);text-decoration:none;white-space:nowrap}
+@media (max-width:480px){ .contacts{grid-template-columns:1fr} .card .body{padding:22px} }
+@media print{.site-head{position:static}.js .reveal{opacity:1;transform:none}.video .play{display:none}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<header class="site-head" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Александр Костюченко — в начало">А. Костюченко<span>.</span></a>
+    <nav class="nav" aria-label="Основная навигация">
+      <ul>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#works">Работы</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <nav class="mnav" aria-label="Навигация (мобильная)">
+    <a href="#about">Обо мне</a><a href="#projects">Проекты</a><a href="#works">Работы</a><a href="#skills">Навыки</a><a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <p class="eyebrow reveal">Портфолио</p>
+      <h1 id="hero-title" class="reveal"><span class="ln">Александр</span><span class="ln">Костюченко</span></h1>
+      <p class="role reveal d2">Журналист<span class="dot" aria-hidden="true">·</span>режиссёр<span class="dot" aria-hidden="true">·</span>креативный продюсер</p>
+      <div class="hero-grid">
+        <div class="reveal">
+          <p class="lead">Автор методики <em>«Кино в школу!»</em> и курса <em>«ИИМАТОГРАФ / AIMATOGRAF»</em>, создатель одноимённого <span style="white-space:nowrap">AI-видеопродакшена</span>.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#works">Смотреть работы <span class="arr" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#contacts">Связаться</a>
+          </div>
+        </div>
+        <ul class="facts reveal d2" aria-label="Коротко">
+          <li><b>2000+</b><span>учеников методики профессиональной переподготовки педагогов «Кино в школу!»</span></li>
+          <li><b>AI</b><span>видеопродакшн «ИИМАТОГРАФ / AIMATOGRAF»: реклама и клипы для технологических компаний и звёзд эстрады</span></li>
+          <li><b aria-hidden="true">—</b><span>Главный эксперт чемпионата мобильного кино «ЮниорМастерс. Креатив»</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 id="about-title"><span class="num">01</span>Обо мне</h2>
+      </div>
+      <div class="about">
+        <div class="reveal label-col">
+          <p class="side-title">Коротко</p>
+        </div>
+        <div>
+          <div class="about-block reveal">
+            <p class="intro"><strong>Александр Костюченко</strong> — журналист, режиссёр, креативный продюсер.</p>
+            <ul class="list">
+              <li>Главный эксперт чемпионата мобильного кино «ЮниорМастерс. Креатив».</li>
+              <li>Создатель онлайн-школы и автор методики профессиональной переподготовки педагогов «Кино в школу!» (2000+ учеников).</li>
+              <li>Спикер и автор курса «ИИМАТОГРАФ / AIMATOGRAF» и одноимённого AI-видеопродакшена по созданию рекламы и клипов для технологических компаний и звёзд эстрады.</li>
+            </ul>
+          </div>
+          <div class="about-block reveal">
+            <p class="side-title">Деятельность</p>
+            <ul class="list">
+              <li>Председатель правления Ассоциации кино- и медиапедагогов «Институт визуальных коммуникаций».</li>
+              <li>Член правления ассоциации кинопедагогов «Образ».</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 id="projects-title"><span class="num">02</span>Проекты</h2>
+        <p>Курсы, методики и проекты на стыке кино, образования и нейросетей.</p>
+      </div>
+
+      <div class="projects">
+        <article class="card featured reveal">
+          <div class="media"><img src="cinematoschool_iimatograf_hero.jpg" width="1440" height="650" loading="lazy" alt="Страница онлайн-курса «ИИМАТОГРАФ» на cinematoschool.ru: «Сказочный способ освоить нейросети с нуля»"></div>
+          <div class="body">
+            <span class="tag">Спикер и автор курса · AI-видеопродакшн</span>
+            <h3>ИИМАТОГРАФ</h3>
+            <p class="sub">Онлайн-курс по созданию стихов и сказок в нейросетях</p>
+            <p class="desc">Курс «ИИМАТОГРАФ / AIMATOGRAF» и одноимённый AI-видеопродакшн по созданию рекламы и клипов для технологических компаний и звёзд эстрады. На курсе нейросети осваивают через творчество: придумывают сказку и героя, генерируют персонажей и сцены, добавляют голос и музыку и собирают собственный фильм.</p>
+            <ul class="meta" aria-label="Темы">
+              <li>Тексты и сказки</li><li>Изображения</li><li>Видео</li><li>Голос и музыка</li>
+            </ul>
+            <div class="links">
+              <a href="https://cinematoschool.ru/iimatograf" target="_blank" rel="noopener">Страница курса <span class="arr" aria-hidden="true">↗</span></a>
+              <a class="secondary" href="https://kan7739684-max.github.io/iimatograf-landing/" target="_blank" rel="noopener">Лендинг вебинара <span class="arr" aria-hidden="true">↗</span></a>
+              <a class="secondary" href="https://rutube.ru/video/cb2cfa4675796c803f71f7c802a8162e/" target="_blank" rel="noopener">Промо-ролик на RuTube <span class="arr" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="media type-media" aria-hidden="true">
+            <span class="big">2000+</span>
+            <span class="cap">учеников</span>
+          </div>
+          <div class="body">
+            <span class="tag">Создатель и автор методики</span>
+            <h3>«Кино в школу!»</h3>
+            <p class="desc">Онлайн-школа и авторская методика профессиональной переподготовки педагогов. Более 2000 учеников.</p>
+          </div>
+        </article>
+
+        <article class="card reveal d2">
+          <div class="media"><img src="juniormasters_site.jpg" width="1440" height="900" loading="lazy" alt="Сайт чемпионата «ЮниорМастерс. Креатив»"></div>
+          <div class="body">
+            <span class="tag">Главный эксперт</span>
+            <h3>«ЮниорМастерс. Креатив»</h3>
+            <p class="desc">Чемпионат мобильного кино. «ЮниорМастерс. Креатив» — соревнования школьников 10–17 лет по основам профессиональных компетенций креативной индустрии.</p>
+            <div class="links">
+              <a href="https://xn----7sbbimbrfpqjn0adclcpi7t.xn--p1ai/" target="_blank" rel="noopener">юниормастерс-креатив.рф <span class="arr" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="media"><img src="cinematoschool_mobile_movie.jpg" width="1440" height="900" loading="lazy" alt="Страница курса «Практическая кинопедагогика: мобильное кино в школе и дома»"></div>
+          <div class="body">
+            <span class="tag">Онлайн-практикум</span>
+            <h3>Курс «Мобильное кино»</h3>
+            <p class="desc">15-дневный онлайн-практикум «Практическая кинопедагогика: мобильное кино в школе и дома» — для тех, кто хочет снимать доброе кино вместе с детьми: сценарий, съёмка и монтаж.</p>
+            <ul class="meta" aria-label="Формат">
+              <li>11 блоков</li><li>32 видеоурока</li><li>5 вебинаров</li>
+            </ul>
+            <div class="links">
+              <a href="https://cinematoschool.ru/mobile_movie" target="_blank" rel="noopener">Страница курса <span class="arr" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal d2">
+          <div class="media"><img src="cinematoschool_stop_motion.jpg" width="1440" height="900" loading="lazy" alt="Страница онлайн-курса «Stop-motion анимация: от идеи до мультфильма»"></div>
+          <div class="body">
+            <span class="tag">Онлайн-курс</span>
+            <h3>Курс по анимации STOP MOTION</h3>
+            <p class="desc">«Stop-motion анимация: от идеи до мультфильма» — курс для педагогов, которые хотят создавать анимацию вместе с детьми: сценарий и раскадровка, съёмка на телефон, монтаж и озвучивание.</p>
+            <ul class="meta" aria-label="Формат">
+              <li>3 блока-практикума</li><li>4 вебинара</li>
+            </ul>
+            <div class="links">
+              <a href="https://cinematoschool.ru/stop-motion" target="_blank" rel="noopener">Страница курса <span class="arr" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="subhead reveal">Материалы <small>презентации и раскадровки</small></h3>
+      <ul class="materials">
+        <li class="reveal"><figure>
+          <img src="iimatograf_pedagogi_deck.jpg" width="1280" height="720" loading="lazy" alt="Титульный слайд презентации «ИИМАТОГРАФ для педагогов»">
+          <figcaption><b>«ИИМАТОГРАФ» для педагогов</b>Презентация: «Сказки, басни и притчи вместе с детьми и нейросетями».</figcaption>
+        </figure></li>
+        <li class="reveal d2"><figure>
+          <img src="iimatograf_kadr4.jpg" width="1280" height="720" loading="lazy" alt="Кадр 4 из 8 раскадровки «И вдруг — чудо!»">
+          <figcaption><b>Раскадровка ролика «Когда прошлое встречает будущее»</b>8 кадров: дети из прошлого попадают в класс будущего.</figcaption>
+        </figure></li>
+        <li class="reveal d3"><figure>
+          <img src="webinar_production_slide.jpg" width="1467" height="825" loading="lazy" alt="Титульный слайд «Видео в нейросетях для производства»">
+          <figcaption><b>Корпоративный вебинар «Видео в нейросетях для производства»</b>90 минут: от текста до ролика, живая демонстрация, сценарий под производство.</figcaption>
+        </figure></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section class="section" id="works" aria-labelledby="works-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 id="works-title"><span class="num">03</span>Работы</h2>
+        <p>Видео, созданные с помощью нейросетей. Нажмите на превью, чтобы запустить ролик.</p>
+      </div>
+      <!-- Чтобы добавить ролик: скопируйте блок <li class="video">…</li>, замените ID Vimeo (в data-vimeo, href и имени превью), название и длительность. Превью: vimeo_ID.jpg -->
+      <ul class="videos">
+        <li class="video reveal"><figure style="margin:0">
+          <div class="frame"><a href="https://vimeo.com/1200400319" data-vimeo="1200400319" aria-label="Смотреть: ИИМАТОГРАФ. Изучение нейросетей сказочным образом" target="_blank" rel="noopener"><img src="vimeo_1200400319.jpg" width="960" height="540" loading="lazy" alt=""><span class="play" aria-hidden="true"></span></a></div>
+          <figcaption><h3>ИИМАТОГРАФ. Изучение нейросетей сказочным образом</h3><span class="dur">1:59</span></figcaption>
+        </figure></li>
+        <li class="video reveal d2"><figure style="margin:0">
+          <div class="frame"><a href="https://vimeo.com/1200401116" data-vimeo="1200401116" aria-label="Смотреть: AIMATOGRAF создание сказок и притч в нейросети" target="_blank" rel="noopener"><img src="vimeo_1200401116.jpg" width="960" height="540" loading="lazy" alt=""><span class="play" aria-hidden="true"></span></a></div>
+          <figcaption><h3>AIMATOGRAF создание сказок и притч в нейросети</h3><span class="dur">2:31</span></figcaption>
+        </figure></li>
+        <li class="video reveal"><figure style="margin:0">
+          <div class="frame"><a href="https://vimeo.com/1200404997" data-vimeo="1200404997" aria-label="Смотреть: NEXT T реклама" target="_blank" rel="noopener"><img src="vimeo_1200404997.jpg" width="960" height="540" loading="lazy" alt=""><span class="play" aria-hidden="true"></span></a></div>
+          <figcaption><h3>NEXT T реклама</h3><span class="dur">0:45</span></figcaption>
+        </figure></li>
+        <li class="video reveal d2"><figure style="margin:0">
+          <div class="frame"><a href="https://vimeo.com/1200405837" data-vimeo="1200405837" aria-label="Смотреть: Арсений Тарковский" target="_blank" rel="noopener"><img src="vimeo_1200405837.jpg" width="960" height="540" loading="lazy" alt=""><span class="play" aria-hidden="true"></span></a></div>
+          <figcaption><h3>Арсений Тарковский</h3><span class="dur">1:30</span></figcaption>
+        </figure></li>
+      </ul>
+      <p class="videos-note reveal">Все работы — на <a href="https://vimeo.com/user105637421" target="_blank" rel="noopener">Vimeo (aimatograf)</a>.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 id="skills-title"><span class="num">04</span>Навыки</h2>
+      </div>
+      <div class="skills">
+        <div class="reveal">
+          <h3>Кино и медиа</h3>
+          <ul>
+            <li>Журналистика</li>
+            <li>Режиссура</li>
+            <li>Креативное продюсирование</li>
+            <li>Сценарий и раскадровка</li>
+            <li>Мобильное кино: съёмка и монтаж</li>
+          </ul>
+        </div>
+        <div class="reveal d2">
+          <h3>Нейросети и AI-видео</h3>
+          <ul>
+            <li>AI-видеопродакшн: реклама и клипы</li>
+            <li>Генерация изображений и видео</li>
+            <li>Тексты, стихи и сказки с нейросетями</li>
+            <li>ИИ-озвучка, музыка и монтаж</li>
+            <li>Промпты и киноязык</li>
+          </ul>
+        </div>
+        <div class="reveal d3">
+          <h3>Образование</h3>
+          <ul>
+            <li>Авторские методики для педагогов</li>
+            <li>Профессиональная переподготовка</li>
+            <li>Онлайн-школа и онлайн-курсы</li>
+            <li>Вебинары и выступления</li>
+            <li>Экспертиза чемпионатов мобильного кино</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="section" id="contacts" aria-labelledby="contacts-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2 id="contacts-title"><span class="num">05</span>Контакты</h2>
+        <p>Для связи удобнее всего написать на электронную почту.</p>
+      </div>
+      <p class="contact-big reveal"><a href="mailto:Kan7739685@gmail.com">Kan7739685@gmail.com</a></p>
+      <ul class="contacts reveal">
+        <li><div class="k">E-mail</div><div class="v"><a href="mailto:Kan7739685@gmail.com">Kan7739685@gmail.com</a></div></li>
+        <li><div class="k">Vimeo</div><div class="v"><a href="https://vimeo.com/user105637421" target="_blank" rel="noopener">aimatograf</a></div></li>
+        <li><div class="k">GitHub</div><div class="v"><a href="https://github.com/kan7739684-max" target="_blank" rel="noopener">kan7739684-max</a></div></li>
+        <li><div class="k">ИИМАТОГРАФ</div><div class="v">@AImatograf</div></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap"><div class="inner">
+    <span>© Александр Костюченко</span>
+    <a href="#top">Наверх ↑</a>
+  </div></div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  // header border on scroll
+  var head=document.querySelector('.site-head');
+  function onScroll(){ head.classList.toggle('scrolled', window.scrollY>8); }
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // reveal on scroll
+  var els=[].slice.call(document.querySelectorAll('.reveal'));
+  if(!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in')});
+  } else {
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    },{rootMargin:'0px 0px -8% 0px', threshold:0.08});
+    els.forEach(function(e){io.observe(e)});
+  }
+
+  // active nav link
+  var links=[].slice.call(document.querySelectorAll('.nav a'));
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ links.forEach(function(a){ a.setAttribute('aria-current', a.getAttribute('href')==='#'+en.target.id ? 'true':'false'); }); }
+      });
+    },{rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('main section[id]').forEach(function(s){so.observe(s)});
+  }
+
+  // Vimeo: lightweight preview -> player on click
+  document.querySelectorAll('a[data-vimeo]').forEach(function(a){
+    a.addEventListener('click', function(ev){
+      var id=a.getAttribute('data-vimeo'); if(!/^\d+$/.test(id)) return;
+      ev.preventDefault();
+      var f=document.createElement('iframe');
+      f.src='https://player.vimeo.com/video/'+id+'?autoplay=1&dnt=1&title=0&byline=0&portrait=0';
+      f.title=(a.getAttribute('aria-label')||'Видео').replace(/^Смотреть:\s*/,'');
+      f.allow='autoplay; fullscreen; picture-in-picture; encrypted-media';
+      f.allowFullscreen=true; f.loading='lazy';
+      a.replaceWith(f); f.focus();
+    });
+  });
+})();
+</script>
+</body>
+</html>
